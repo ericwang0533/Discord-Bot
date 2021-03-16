@@ -38,7 +38,7 @@ client.on('ready', () => {
     }
 
     // message embed
-    const embed = new MessageEmbed()
+    const embed = new Discord.MessageEmbed()
     .setTitle('Test Title')
     .setColor(0xff000)
     .setDescription('Test description');
