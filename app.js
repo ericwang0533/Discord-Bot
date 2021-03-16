@@ -1,4 +1,5 @@
-const { Discord, MessageEmbed } = require('discord.js');
+const Discord = require('discord.js');
+const MessageEmbed = require('discord.js');
 require('dotenv').config();
 
 const client = new Discord.Client();  
