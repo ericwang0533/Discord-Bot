@@ -47,12 +47,12 @@ client.on('ready', () => {
     client.channels.cache.get("821511906774876170").send({embed: {
         color: "0x69f0ae",
         author: {
-          name: client.user.username,
-          icon_url: client.user.avatarURL
+          name: "WHS Computer Science Club | Meeting 03/16/21",
+          icon_url: "https://cdn.discordapp.com/icons/750556186247692369/cceaf85821f7fbc8af688a7e1b2f0ac4.png?size=256"
         },
-        title: "This is an embed",
-        url: "http://google.com",
-        description: "This is a test embed to showcase what they look like and what they can do.",
+        title: "Image Classification in ML",
+        url: "http://google.com", // do we need this?
+        description: "Hello @everyone, \nHIHIHII",
         fields: [{
             name: "Fields",
             value: "They can have different fields with small headlines."
@@ -68,8 +68,8 @@ client.on('ready', () => {
         ],
         timestamp: new Date(),
         footer: {
-          icon_url: client.user.avatarURL,
-          text: "© Example"
+        //   icon_url: client.user.avatarURL,
+          text: "Linktree",
         }
       }
     });
