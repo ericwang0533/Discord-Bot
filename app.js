@@ -44,36 +44,38 @@ client.on('ready', () => {
     // .setAuthor()
     // .setDescription('Test description');
 
-    client.channels.cache.get("821511906774876170").send("Hello @everyone,\n", {embed: {
-        content: "Hello @everyone,\n",
-        color: "0x69f0ae",
-        author: {
-          name: "WHS Computer Science Club | Meeting 03/16/21",
-          icon_url: "https://cdn.discordapp.com/icons/750556186247692369/cceaf85821f7fbc8af688a7e1b2f0ac4.png?size=256"
-        },
-        title: "Image Classification in ML",
-        url: "http://google.com", // do we need this?
-        description: "Hello @everyone, \nHIHIHII",
-        fields: [{
-            name: "Fields",
-            value: "They can have different fields with small headlines."
-          },
-          {
-            name: "Masked links",
-            value: "You can put [masked links](http://google.com) inside of rich embeds."
-          },
-          {
-            name: "Markdown",
-            value: "You can put all the *usual* **__Markdown__** inside of them."
-          }
-        ],
-        timestamp: new Date(),
-        footer: {
-        //   icon_url: client.user.avatarURL,
-          text: "Linktree",
-        }
-      }
-    });
+    client.channels.cache.get("821511906774876170").send("test");
+
+    // client.channels.cache.get("821511906774876170").send("Hello @everyone,\n", {embed: {
+    //     content: "Hello @everyone,\n",
+    //     color: "0x69f0ae",
+    //     author: {
+    //       name: "WHS Computer Science Club | Meeting 03/16/21",
+    //       icon_url: "https://cdn.discordapp.com/icons/750556186247692369/cceaf85821f7fbc8af688a7e1b2f0ac4.png?size=256"
+    //     },
+    //     title: "Image Classification in ML",
+    //     url: "http://google.com", // do we need this?
+    //     description: "Hello @everyone, \nHIHIHII",
+    //     fields: [{
+    //         name: "Fields",
+    //         value: "They can have different fields with small headlines."
+    //       },
+    //       {
+    //         name: "Masked links",
+    //         value: "You can put [masked links](http://google.com) inside of rich embeds."
+    //       },
+    //       {
+    //         name: "Markdown",
+    //         value: "You can put all the *usual* **__Markdown__** inside of them."
+    //       }
+    //     ],
+    //     timestamp: new Date(),
+    //     footer: {
+    //     //   icon_url: client.user.avatarURL,
+    //       text: "Linktree",
+    //     }
+    //   }
+    // });
     // client.channels.cache.get("821511906774876170").send(embed);
 });
 
