@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const MessageEmbed = require('discord.js');
 require('dotenv').config();
 
 const client = new Discord.Client();  
@@ -7,6 +6,10 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
     console.log(`I am online, my name is ${client.user.username}`);
+
+    // client.user.setActivity('bit.ly/compscilinktree', { type: 'WATCHING' });
+    client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'dnd' })
+
 
     // date stuff
     var date = new Date();
