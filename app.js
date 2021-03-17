@@ -45,6 +45,7 @@ client.on('ready', () => {
     // .setDescription('Test description');
 
     client.channels.cache.get("821511906774876170").send({embed: {
+        content: "Hello @everyone,\n",
         color: "0x69f0ae",
         author: {
           name: "WHS Computer Science Club | Meeting 03/16/21",
