@@ -44,7 +44,7 @@ client.on('ready', () => {
     // .setAuthor()
     // .setDescription('Test description');
 
-    client.channels.cache.get("821511906774876170").send({embed: {
+    client.channels.cache.get("821511906774876170").send("Hello @everyone,\n", {embed: {
         content: "Hello @everyone,\n",
         color: "0x69f0ae",
         author: {
