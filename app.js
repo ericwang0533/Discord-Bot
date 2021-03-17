@@ -45,7 +45,7 @@ client.on('ready', () => {
     // .setDescription('Test description');
 
     client.channels.cache.get("821511906774876170").send({embed: {
-        color: 3447003,
+        color: "0x69f0ae",
         author: {
           name: client.user.username,
           icon_url: client.user.avatarURL
