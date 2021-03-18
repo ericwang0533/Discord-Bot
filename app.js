@@ -1,15 +1,16 @@
 const Discord = require('discord.js');
-const schedule = require('node-schedule');
+// const schedule = require('node-schedule');
+var CronJob = require('cron').CronJob;
 require('dotenv').config();
 
 const client = new Discord.Client();  
 client.login(process.env.BOT_TOKEN);
 
-const job = schedule.scheduleJob('58 13 * * 4', function(){
-    console.log("hi")
-    client.channels.cache.get("821511906774876170").send(`I am online 58 13 4`);
+// const job = schedule.scheduleJob('58 13 * * 4', function(){
+//     console.log("hi")
+//     client.channels.cache.get("821511906774876170").send(`I am online 58 13 4`);
 
-});
+// });
 
 client.on('ready', () => {
     console.log(`I am online, my name is ${client.user.username}`);
@@ -17,8 +18,21 @@ client.on('ready', () => {
     // client.user.setActivity('bit.ly/compscilinktree', { type: 'WATCHING' });
     client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'dnd' })
 
+    var job = new CronJob(
+        '0 30 14 * * 4',
+        function(){
+            console.log("0 30 14 * * 4")
+            client.channels.cache.get("821511906774876170").send(`I am online 0 30 14 * * 4`);
+        },
+        null,
+        true,
+        'America/Los_Angeles'
+    );
+
+    // cron
+
     // node-schedule
-    job();
+    // job();
 
     // date stuff
     var date = new Date();
