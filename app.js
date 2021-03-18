@@ -1,8 +1,15 @@
 const Discord = require('discord.js');
+const schedule = require('node-schedule');
 require('dotenv').config();
 
 const client = new Discord.Client();  
 client.login(process.env.BOT_TOKEN);
+
+const job = schedule.scheduleJob('58 13 * * 4', function(){
+    console.log("hi")
+    client.channels.cache.get("821511906774876170").send(`I am online 58 13 4`);
+
+});
 
 client.on('ready', () => {
     console.log(`I am online, my name is ${client.user.username}`);
@@ -10,6 +17,8 @@ client.on('ready', () => {
     // client.user.setActivity('bit.ly/compscilinktree', { type: 'WATCHING' });
     client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'dnd' })
 
+    // node-schedule
+    job();
 
     // date stuff
     var date = new Date();
