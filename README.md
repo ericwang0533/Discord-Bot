@@ -1,6 +1,6 @@
 # Discord-Bot
+- (for testing purposes only | not being used currently)  
 - My Discord-Bot for learning/testing purposes when creating the WHS Computer Science Club Discord Bot
-- (not being used currently)  
 
 <br>
 
