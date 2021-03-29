@@ -14,7 +14,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
     console.log(`I am online, my name is ${client.user.username}`);
-
+    client.channels.cache.get("821511906774876170").send(`Hello @everyone,\n\nMeeting at lunch (12:35) tomorrow! We will be using Python to create algorithms to beat other bots in a rock paper scissors round-robin tournament.\n\nZoom Link: https://bit.ly/whscompscizoom\nPassword: **compsci**\n\nSee you there!`);
     // client.user.setActivity('bit.ly/compscilinktree', { type: 'WATCHING' });
     client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'dnd' })
 
